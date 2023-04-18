@@ -1,6 +1,5 @@
 package runners;
 
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -15,11 +14,9 @@ import org.junit.runner.RunWith;
                 "timeline:test-output-thread/",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
-        features = "src/test/resources/API_Feature",
+        features = "src/test/resources/UI_Feature",
         glue = "stepdefinitions",
-        tags = "@US001", // Keyword Driven Testing
+        tags = "@US012", // Keyword Driven Testing
         dryRun = false
 )
-
-public class Runner {
-}
+public class Runner {}
