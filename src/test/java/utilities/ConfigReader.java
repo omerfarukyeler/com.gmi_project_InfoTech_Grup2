@@ -1,8 +1,12 @@
 package utilities;
 
+import io.restassured.response.Response;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+
+import static io.restassured.RestAssured.given;
 
 public class ConfigReader {
     public static Properties properties;
@@ -20,6 +24,9 @@ public class ConfigReader {
     }
 
     public static String getProperty(String key){
+
         return properties.getProperty(key);
+
+
     }
 }
