@@ -48,7 +48,7 @@ public class US020 {
 
         System.out.println(getAuthToken());
 
-        Response response = given().header("Authorization","Bearer "+"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbjIwMjMiLCJhdXRoIjoiUk9MRV9BRE1JTiIsImV4cCI6MTY4NDYzMjgzMn0.myIVD4DQK3nwewUVuHOaDsXBSjFkC1Fv095UTCzsQC6XFfPOASqS9Agxp5k_E3dzkUiy8C1UizC1h1h0rJr4Jg\n")
+        Response response = given().header("Authorization","Bearer "+".eyJzdWIiOieyJhbGciOiJIUzUxMiJ9JhZG1pbjIwMjMiLCJhdXRoIjoiUk9MRV9BRE1JTiIsImV4cCI6MTY4NDYzMjgzMn0.myIVD4DQK3nwewUVuHOaDsXBSjFkC1Fv095UTCzsQC6XFfPOASqS9Agxp5k_E3dzkUiy8C1UizC1h1h0rJr4Jg\n")
                 .contentType(ContentType.JSON).when()
                 .get("https://gmibank.com/api/tp-customers")
                 .then()
