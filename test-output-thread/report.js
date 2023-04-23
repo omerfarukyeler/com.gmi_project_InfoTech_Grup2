@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"b5cb8c03-8eb4-4c2a-987a-6d59d63d1613","feature":"System should allow to read all countries","scenario":"Read all customers you created and validate them from your data set","start":1682109320565,"group":1,"content":"","tags":"@us020,@us020_1,","end":1682109328167,"className":"passed"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"482407c6-576a-4f05-ad4c-2966e45ab627","feature":"System should allow to create","scenario":"User can just create each state 1 by 1","start":1682292567417,"group":1,"content":"","tags":"@us2400,","end":1682292572729,"className":"passed"}]);
 CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
 });
