@@ -11,13 +11,15 @@ public class StatesURL {
 
     @Before
     public void setup(){
+        //specStates= new RequestSpecBuilder().
+                //setBaseUri("https://www.gmibank.com/api").build();
 
-
-        specStates= new RequestSpecBuilder().
-                setBaseUri("https://www.gmibank.com/api").build();
+       RequestSpecification specStates = new RequestSpecBuilder().
+                setBaseUri("https://www.gmibank.com/").build();
+        }
     }
 
 
 
 
-}
+
