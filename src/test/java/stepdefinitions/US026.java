@@ -7,7 +7,7 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import pojos.ResponseCountries;
+import pojos.Countries;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
@@ -20,7 +20,7 @@ public class US026 {
             setBaseUri("https://www.gmibank.com").
             build();
     Response response;
-    ResponseCountries expectedData;
+    Countries expectedData;
     @Given("user sends put request for update country")
     public void user_sends_put_request_for_update_country() {
         //https://gmibank.com/api/tp-countries
@@ -32,14 +32,14 @@ public class US026 {
 
         spec.pathParams("first", "api", "second", "tp-countries");
 
-        expectedData= new ResponseCountries("Banana Republic",184073,null);
+        expectedData= new Countries(184073,"Banana Republic",null);
         response = given(spec).body(expectedData).when().put("/{first}/{second}");
         response.prettyPrint();
     }
     @Then("user gets the country data and assert")
     public void user_gets_the_country_data_and_assert() {
 
-        ResponseCountries actualData= response.as(ResponseCountries.class);
+        Countries actualData= response.as(Countries.class);
 
         assertEquals(200,response.statusCode());
         assertEquals(expectedData.getId(),actualData.getId());
