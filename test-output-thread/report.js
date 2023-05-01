@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"09b9b125-d5c9-4283-aecf-c094a6dbc830","feature":"US22_System should allow to read states","scenario":"TC01_Read all states you created and validate them from your data set","start":1682976286403,"group":1,"content":"","tags":"@us22,","end":1682976288836,"className":"passed"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"c0a109f9-1f62-453d-b133-f5ffba3065fe","feature":"US22_System should allow to read states","scenario":"TC02_Create a state and validate them from id","start":1682977476667,"group":1,"content":"","tags":"@us22,","end":1682977477752,"className":"passed"},{"id":"5f8eb309-4731-411b-8d3b-7b43d0eb85f2","feature":"US22_System should allow to read states","scenario":"TC01_Read all states you created and validate them from your data set","start":1682977474156,"group":1,"content":"","tags":"@us22,","end":1682977476660,"className":"passed"}]);
 CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
 });

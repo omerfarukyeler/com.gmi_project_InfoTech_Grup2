@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9984dd01-36a2-4463-ae90-5a07ae3ec23d" name="Changes" comment="firstcommit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/baseurl/GmiBaseUrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pojos/ResponseStates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pojos/ResponseStatesItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pojos/ResponseTpStates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pojos/TpStates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojos/ResponseCountries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/ResponseCountries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/RunnerAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/RunnerAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pojos/ResponseStates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pojos/ResponseStatesItem.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US022.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US022.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US026.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US026.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Authentication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/API_Feature/US022.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/API_Feature/US022.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output-thread/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/report.js" afterDir="false" />
     </list>
@@ -109,15 +106,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: TC01_User can just update each country 1 by 1 (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC02_Create a state and validate them from id" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/API_Feature/US026.feature" />
-      <option name="GLUE" value="stepdefinitions" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/API_Feature/US022.feature" />
+      <option name="GLUE" value="stepdefinitions utilities" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="com.medunna_project_InfoTech_Grup2" />
-      <option name="NAME_FILTER" value="^TC01_User can just update each country 1 by 1$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC01_User can just update each country 1 by 1$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC01_User can just update each country 1 by 1" />
+      <option name="NAME_FILTER" value="^TC02_Create a state and validate them from id$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC02_Create a state and validate them from id$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC02_Create a state and validate them from id" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -173,10 +170,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RunnerAPI" />
+        <item itemvalue="Cucumber Java.Scenario: TC02_Create a state and validate them from id" />
         <item itemvalue="Cucumber Java.Scenario: TC01_Read all states you created and validate them from your data set" />
         <item itemvalue="Cucumber Java.Feature: US022" />
         <item itemvalue="JUnit.Runner" />
-        <item itemvalue="Cucumber Java.Scenario: TC01_User can just update each country 1 by 1 (1)" />
       </list>
     </recent_temporary>
   </component>
