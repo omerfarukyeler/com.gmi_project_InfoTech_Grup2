@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"482407c6-576a-4f05-ad4c-2966e45ab627","feature":"System should allow to create","scenario":"User can just create each state 1 by 1","start":1682292567417,"group":1,"content":"","tags":"@us2400,","end":1682292572729,"className":"passed"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"77d760f8-23aa-43a9-b092-db2d711087af","feature":"System should allow to create","scenario":"User can just create each state 1 by 1","start":1683066306975,"group":1,"content":"","tags":"@us024,","end":1683066311977,"className":"passed"}]);
 CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
 });

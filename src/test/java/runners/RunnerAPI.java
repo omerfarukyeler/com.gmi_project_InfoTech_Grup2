@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources",
         glue = {"stepdefinitions"},
-        tags = "@US2400", // Keyword Driven Testing
+        tags = "@US024", // Keyword Driven Testing
         dryRun = false
 
 )
