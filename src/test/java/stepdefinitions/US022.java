@@ -101,6 +101,7 @@ public class US022 {
         response.prettyPrint();
 
         ResponseTpStates act= response.as(ResponseTpStates.class);
+
         assertEquals(200,response.statusCode());
         assertEquals(expectedData.getName(),act.getName());
         assertEquals(expectedData.getTpcountry(),act.getTpcountry());

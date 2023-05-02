@@ -8,10 +8,10 @@ import org.junit.Before;
 import static utilities.Authentication.generateToken;
 
 public class GmiBaseUrl {
-    protected RequestSpecification spec;
+    protected static RequestSpecification spec;
 
     @Before //Her test methodundan önce çalışır.
-    public void setUp() {
+    public static void setUp() {
         spec = new RequestSpecBuilder().
                 setContentType(ContentType.JSON).
                 addHeader("Authorization",  generateToken()).
