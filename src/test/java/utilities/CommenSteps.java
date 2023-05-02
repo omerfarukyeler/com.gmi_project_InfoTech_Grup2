@@ -1,5 +1,8 @@
 package utilities;
 
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.*;
@@ -16,6 +19,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
+
+import static utilities.Authentication.generateToken;
 
 public class CommenSteps {
     /**
@@ -672,4 +677,28 @@ public class CommenSteps {
         return xPath;
 
     }
+     public static Response getCountryWithIdApi(int id){
+
+        return RestAssured
+                .given().accept(ContentType.ANY)
+                .and().baseUri("https://www.gmibank.com/api")
+                .and().header("Authorization", generateToken())
+                .and().log().method().log().uri()
+                .and().pathParam("countryId", id)
+                .when().get("/tp-countries/{countryId}")
+                .then().assertThat().statusCode(200).log().body()
+                .extract().response();
+    }
+    public static Response getAllCountryApi(){
+
+        return RestAssured
+                .given().accept(ContentType.ANY)
+                .and().baseUri("https://www.gmibank.com/api")
+                .and().header("Authorization", generateToken())
+                .and().log().method().log().uri()
+                .when().get("/tp-countries")
+                .then().assertThat().statusCode(200).log().body()
+                .extract().response();
+    }
+
 }
