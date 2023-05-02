@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import baseurl.GmiBaseUrl;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.builder.RequestSpecBuilder;
@@ -13,6 +14,11 @@ import static org.junit.Assert.assertEquals;
 import static utilities.Authentication.generateToken;
 
 public class US026 {
+    RequestSpecification spec = new RequestSpecBuilder().
+            setContentType(ContentType.JSON).
+            addHeader("Authorization",  generateToken()).
+            setBaseUri("https://www.gmibank.com").
+            build();
     Response response;
     Countries expectedData;
     @Given("user sends put request for update country")
@@ -23,10 +29,6 @@ public class US026 {
 //                "name": "Banana Republic",
 //                "states": null
 //        }
-        RequestSpecification spec = new RequestSpecBuilder().
-                setContentType(ContentType.JSON).
-                addHeader("Authorization", generateToken()).
-                setBaseUri("https://gmibank.com/").build();
 
         spec.pathParams("first", "api", "second", "tp-countries");
 
