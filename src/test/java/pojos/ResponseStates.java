@@ -1,4 +1,4 @@
-package com.example;
+package pojos;
 
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
