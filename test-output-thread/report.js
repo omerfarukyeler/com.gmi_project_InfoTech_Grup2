@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"4705a78e-764b-4a1c-b41e-1ffd6359835a","feature":"System should allow to update countries","scenario":"TC01_User can just update each country 1 by 1","start":1681937169532,"group":1,"content":"","tags":"@us26,","end":1681937171345,"className":"passed"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"ded2fd15-641e-484a-8566-0683ccbc9b7e","feature":"US22_System should allow to read states","scenario":"TC02_Create a state and validate them from id","start":1683058077988,"group":1,"content":"","tags":"@us22,","end":1683058079014,"className":"passed"},{"id":"39ff4482-80ce-46f6-812d-030953dcaf87","feature":"US22_System should allow to read states","scenario":"TC01_Read all states you created and validate them from your data set","start":1683058075081,"group":1,"content":"","tags":"@us22,","end":1683058077980,"className":"passed"}]);
 CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
 });
