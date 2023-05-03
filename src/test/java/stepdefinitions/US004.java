@@ -41,6 +41,7 @@ public class US004 {
     public void userVerifiesSuccessfulLogin() {
         String actualValue = loginPage.userNameAfterLogin.getText();
         String expectedValue ="User Name";
+
         Assert.assertEquals(expectedValue,actualValue);
         //Boolean elementIsDisplayed = loginPage.myOperations.isDisplayed();
         //Assert.assertTrue(elementIsDisplayed);
