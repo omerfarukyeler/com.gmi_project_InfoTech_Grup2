@@ -13,7 +13,12 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="9dbac859-232a-472d-b246-d749afeeb7ed">
-      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select id,login,first_name,last_name,email,created_by from jhi_user;]]></console>
+      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select id,login,first_name,last_name,email,created_by from jhi_user;
+select * from tp_country where id=100;
+select * from tp_account;
+select * from tp_state where id=1;
+insert into tp_country values (100,'USA');
+insert into tp_state values (1,'Missisipi',100);]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -24,6 +29,8 @@
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="9dbac859-232a-472d-b246-d749afeeb7ed" dataset="public.student" active-filter-id="" />
+    <filter-actions connection-id="9dbac859-232a-472d-b246-d749afeeb7ed" dataset="public.tp_customer" active-filter-id="" />
+    <filter-actions connection-id="9dbac859-232a-472d-b246-d749afeeb7ed" dataset="public.tp_state" active-filter-id="" />
     <filter-actions connection-id="9dbac859-232a-472d-b246-d749afeeb7ed" dataset="public.jhi_user" active-filter-id="" />
     <filter-actions connection-id="9dbac859-232a-472d-b246-d749afeeb7ed" dataset="public.jhi_authority" active-filter-id="" />
   </component>
