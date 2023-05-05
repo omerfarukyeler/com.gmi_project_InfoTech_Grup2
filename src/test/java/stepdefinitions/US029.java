@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
@@ -33,7 +34,7 @@ public class US029 {
         while (resultSet.next()){
             count++;
         }
-        System.out.println("Tablodaki satır sayısı => " + count);
+        System.out.println("User Table row count  => " + count);
         Assert.assertEquals(count, 3227);
 
     }
@@ -41,24 +42,64 @@ public class US029 {
     @Then("print first user name and verify")
     public void printFirstUserNameAndVerify() throws SQLException {
         resultSet.first();
-        String val = resultSet.getString("email");
-        Assert.assertEquals(val, "anonymous@localhost");
-        System.out.println("ilk kullanicinin email adresi = " + val);
+        String firstEmail = resultSet.getString("email");
+        Assert.assertEquals(firstEmail, "anonymous@localhost");
+        System.out.println("ilk kullanicinin email adresi = " + firstEmail);
     }
 
     @Then("print last user name and verify")
     public void printLastUserNameAndVerify() throws SQLException {
         resultSet.last();
-        String val = resultSet.getString("first_name");
-        Assert.assertEquals(val, "Julieann");
-        System.out.println("son kullanici ismi = " + val);
+        String lastEmail = resultSet.getString("first_name");
+        Assert.assertEquals(lastEmail, "Julieann");
+        System.out.println("son kullanici ismi = " + lastEmail);
     }
 
     @Then("print spesific user name and verify")
     public void printSpesificUserNameAndVerify() throws SQLException {
         resultSet.absolute(10);
-        String val = resultSet.getString("login");
-        Assert.assertEquals(val, "rolland.kassulke");
-        System.out.println(10 + ". kullanicinin login name = " + val);
+        String loginName = resultSet.getString("login");
+        Assert.assertEquals(loginName, "rolland.kassulke");
+        System.out.println(10 + ". user login name = " + loginName);
+    }
+
+    @And("user connects to the country table")
+    public void userConnectsToTheCountryTable() throws SQLException {
+        resultSet = statement.executeQuery("select * from public.tp_country;");
+
+    }
+
+    @Then("print the total row country count and verify")
+    public void printTheTotalRowCountryCountAndVerify() throws SQLException {
+        int count = 0;
+        while (resultSet.next()){
+            count++;
+        }
+        System.out.println("Country Table row size => " + count);
+        Assert.assertEquals(count, 5238);
+    }
+
+    @Then("print first country name and verify")
+    public void printFirstCountryNameAndVerify() throws SQLException {
+        resultSet.first();
+        String id = resultSet.getString("id");
+        Assert.assertEquals(id, "24113");
+        System.out.println("First country id  = " + id);
+    }
+
+    @Then("print last country name and verify")
+    public void printLastCountryNameAndVerify() throws SQLException {
+        resultSet.last();
+        String lastCountryName = resultSet.getString("name");
+        Assert.assertEquals(lastCountryName, "Tuba");
+        System.out.println("Last country name = " + lastCountryName);
+    }
+
+    @Then("print spesific country name and verify")
+    public void printSpesificCountryNameAndVerify() throws SQLException {
+        resultSet.absolute(50);
+        String countryName = resultSet.getString("name");
+        Assert.assertEquals(countryName, "FRANCE");
+        System.out.println(50 + ". country name = " + countryName);
     }
 }

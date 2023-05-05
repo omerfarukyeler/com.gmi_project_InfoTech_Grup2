@@ -18,7 +18,8 @@ select * from tp_country where id=100;
 select * from tp_account;
 select * from tp_state where id=1;
 insert into tp_country values (100,'USA');
-insert into tp_state values (1,'Missisipi',100);]]></console>
+insert into tp_state values (1,'Missisipi',100);
+select * from tp_country;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
