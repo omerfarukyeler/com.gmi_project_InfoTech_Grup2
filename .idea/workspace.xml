@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9984dd01-36a2-4463-ae90-5a07ae3ec23d" name="Changes" comment="24.04.2023">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pojos/ResponseStates2.java" afterDir="false" />
+    <list default="true" id="9984dd01-36a2-4463-ae90-5a07ae3ec23d" name="Changes" comment="03.05.2023">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojos/ResponseStates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojos/ResponseStates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/RunnerAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/RunnerAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US024.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US024.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US2400.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/API_Feature/US024.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/API_Feature/US024.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output-thread/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/report.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682292645391</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="03.05.2023">
+      <created>1683066343591</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683066343591</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,6 +228,7 @@
     <MESSAGE value="21.04.2023" />
     <MESSAGE value="22.04.2023" />
     <MESSAGE value="24.04.2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.04.2023" />
+    <MESSAGE value="03.05.2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="03.05.2023" />
   </component>
 </project>
