@@ -19,8 +19,7 @@
       <console name="Connection 1" type="STANDARD" schema="postgres" session="Main" />
     </connection>
     <connection id="a74fec1b-0d6d-498a-87fe-a4d1da161a13">
-      <console name="Connection 2" type="STANDARD" schema="pg_temp_14" session="Main"><![CDATA[select *from "public".tp_employee
-;]]></console>
+      <console name="Connection 2" type="STANDARD" schema="gmibank_db" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
