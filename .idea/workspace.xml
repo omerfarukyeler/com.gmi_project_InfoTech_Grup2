@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9984dd01-36a2-4463-ae90-5a07ae3ec23d" name="Changes" comment="ahmet fırst commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9984dd01-36a2-4463-ae90-5a07ae3ec23d" name="Changes" comment="ibrahim update 2 - 02/05/2023" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.US021.getAllCountries" />
         <item itemvalue="JUnit.RunnerAPI" />
+        <item itemvalue="Cucumber Java.Scenario: User can just create each country 1 by 1" />
         <item itemvalue="Cucumber Java.Scenario: User can read all countries and validate them one by one" />
         <item itemvalue="Cucumber Java.Scenario: User can read all countries and validate them" />
-        <item itemvalue="Cucumber Java.Scenario: User can just create each country 1 by 1" />
+        <item itemvalue="JUnit.US021.getAllCountries" />
       </list>
     </recent_temporary>
   </component>
@@ -203,12 +201,12 @@
       <option name="project" value="LOCAL" />
       <updated>1682725361896</updated>
     </task>
-    <task id="LOCAL-00005" summary="ahmet fırst commit">
-      <created>1683148007285</created>
+    <task id="LOCAL-00005" summary="ibrahim update 2 - 02/05/2023">
+      <created>1683063366627</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1683148007285</updated>
+      <updated>1683063366627</updated>
     </task>
     <option name="localTasksCounter" value="6" />
     <servers />
@@ -228,7 +226,7 @@
     <MESSAGE value="firstcommit" />
     <MESSAGE value="gmi project update 20/04/2023" />
     <MESSAGE value="ibrahim duzenlenecek update 29/04/2023" />
-    <MESSAGE value="ahmet fırst commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="ahmet fırst commit" />
+    <MESSAGE value="ibrahim update 2 - 02/05/2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="ibrahim update 2 - 02/05/2023" />
   </component>
 </project>
