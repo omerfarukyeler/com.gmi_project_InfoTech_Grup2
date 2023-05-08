@@ -102,4 +102,33 @@ public class US029 {
         Assert.assertEquals(countryName, "FRANCE");
         System.out.println(50 + ". country name = " + countryName);
     }
+
+    @Given("employee connects to the database")
+    public void employeeConnectsToTheDatabase() throws SQLException {
+        connection = DriverManager.getConnection(url, username, password);
+        statement  = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+    }
+
+    @And("employee  connects to the user table")
+    public void employeeConnectsToTheUserTable() throws SQLException {
+
+        resultSet = statement.executeQuery("select * from public.tp_employee;");
+
+
+    }
+
+    @Then("prints the total row count and verify")
+    public void printsTheTotalRowCountAndVerify() throws SQLException {
+        int count = 0;
+        while (resultSet.next()){
+            count++;
+        }
+        System.out.println("User Table row count  => " + count);
+        Assert.assertEquals(count, 0);
+
+
+
+
+
+    }
 }
