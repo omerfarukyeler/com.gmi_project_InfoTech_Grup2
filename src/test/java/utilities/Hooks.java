@@ -7,11 +7,14 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
+import static baseurl.GmiBaseUrl.setUp;
+
 public class Hooks {
     static int stepCount;
     @Before
-    public void setup() {
-       Driver.getDriver();
+    public void before() {
+        setUp();
+
     }
     @After
     public void teardown(Scenario scenario) {

@@ -1,15 +1,18 @@
 package pojos;
 
-public class ResponseCountries {
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Countries {
 	private String name;
 
-	public ResponseCountries(String name, int id, Object states) {
-		this.name = name;
+	public Countries(int id, String name, Object states) {
 		this.id = id;
+		this.name = name;
 		this.states = states;
 	}
 
-	public ResponseCountries() {
+	public Countries() {
 	}
 
 	private int id;
@@ -41,11 +44,11 @@ public class ResponseCountries {
 
 	@Override
  	public String toString(){
-		return 
-			"Response{" + 
-			"name = '" + name + '\'' + 
-			",id = '" + id + '\'' + 
-			",states = '" + states + '\'' + 
-			"}";
+		return
+			"Response{" +
+					"id = '" + id + '\'' +
+					",name = '" + name + '\'' +
+					",states = '" + states + '\'' +
+					"}";
 		}
 }

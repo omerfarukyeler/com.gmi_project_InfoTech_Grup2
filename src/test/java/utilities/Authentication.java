@@ -23,12 +23,5 @@ public class Authentication {
 
             return "Bearer "+response.jsonPath().getString("id_token");
         }
-
-    @Test
-    public void name() {
-
-
-        System.out.println("generateToken() = " + generateToken());
-    }
     }
 
