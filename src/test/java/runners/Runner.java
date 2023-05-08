@@ -11,12 +11,13 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber-reports.html",
                 "json:target/cucumber-reports",
                 "rerun:target/failed.txt",
-                "timeline:test-output-thread/",
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                "timeline:test-output-thread/"
         },
         features = "src/test/resources/UI_Feature",
         glue = {"stepdefinitions","utilities/hooks"},
-        tags = "@us26 and @US022", // Keyword Driven Testing
+        tags = "@us17", // Keyword Driven Testing
         dryRun = false
 )
-public class Runner {}
+public class Runner {
+
+}

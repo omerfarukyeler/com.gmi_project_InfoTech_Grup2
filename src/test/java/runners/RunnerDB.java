@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/DB_Feature",
         glue = {"stepdefinitions"},
-        tags = "@us29", // Keyword Driven Testing
+        tags = "@us29_employee", // Keyword Driven Testing
         dryRun = false
 )
 public class RunnerDB {}
