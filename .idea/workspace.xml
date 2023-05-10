@@ -4,46 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9984dd01-36a2-4463-ae90-5a07ae3ec23d" name="Changes" comment="ibrahim update 2 - 02/05/2023">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegisterPages.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/RunnerAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/RunnerAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/RunnerDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/RunnerDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US013.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US013.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US015.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US015.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US029.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US029.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/API_Feature/US001.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/API_Feature/US021.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/API_Feature/US021.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/API_Feature/US022.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/API_Feature/US022.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/API_Feature/US025.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/API_Feature/US025.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/API_Feature/US026.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/API_Feature/US026.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/DB_Feature/US029_country.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/DB_Feature/US029_country.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/DB_Feature/US029_employee.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/DB_Feature/US029_employee.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/DB_Feature/US029_user.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/DB_Feature/US029_user.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/UI_Feature/US001.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UI_Feature/US001.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/UI_Feature/US002.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UI_Feature/US002.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/UI_Feature/US003.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UI_Feature/US003.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/UI_Feature/US004.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UI_Feature/US004.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/UI_Feature/US005.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UI_Feature/US005.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/UI_Feature/US006.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UI_Feature/US006.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/UI_Feature/US007.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UI_Feature/US007.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/UI_Feature/US008.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UI_Feature/US008.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/UI_Feature/US010.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UI_Feature/US010.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/UI_Feature/US011.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UI_Feature/US011.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/UI_Feature/US012.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UI_Feature/US012.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/UI_Feature/US013.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UI_Feature/US013.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/UI_Feature/US014.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UI_Feature/US014.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/UI_Feature/US015.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UI_Feature/US015.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/UI_Feature/US017.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UI_Feature/US017.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/UI_Feature/US018.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UI_Feature/US018.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/UI_Feature/US019.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UI_Feature/US019.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/countries-schema.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output-thread/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/report.js" afterDir="false" />
-    </list>
+    <list default="true" id="9984dd01-36a2-4463-ae90-5a07ae3ec23d" name="Changes" comment="update 10.05.2023" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,12 +23,14 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="muhammet" />
+        <entry key="$PROJECT_DIR$" value="omer" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/corretto-17.0.6/lib/src.zip!/java.base/java/lang/NullPointerException.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-17.0.6/lib/src.zip!/java.base/java/lang/Object.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/stepdefinitions/US022.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
