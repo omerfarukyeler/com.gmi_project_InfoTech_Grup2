@@ -1,4 +1,4 @@
-@US013
+@US013 @ui
 Feature: US_013 An Employee can create a new Account
 
   Background:

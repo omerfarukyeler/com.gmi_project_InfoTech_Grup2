@@ -1,3 +1,4 @@
+@ui
 Feature: A Manager can manage Customer
 
   Background:

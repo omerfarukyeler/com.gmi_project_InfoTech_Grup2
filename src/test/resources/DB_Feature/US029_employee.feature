@@ -1,4 +1,4 @@
-@us29_employee
+@us29_employee   @db
 Feature: US029
   Background:
     Given employee connects to the database

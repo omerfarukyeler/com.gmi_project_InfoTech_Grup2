@@ -147,6 +147,7 @@ public class US013 {
 
     @And("Provide the username of the applicant as employee")
     public void provideTheUsernameOfTheApplicantAsEmployee() {
+        Login_Page loginPage= new Login_Page();
         loginPage.userName.sendKeys(ConfigReader.getProperty("employeeSehri"));
     }
 }

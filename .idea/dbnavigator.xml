@@ -13,7 +13,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="9dbac859-232a-472d-b246-d749afeeb7ed">
-      <console name="Connection" type="STANDARD" schema="gmibank_db" session="Main" />
+      <console name="Connection" type="STANDARD" schema="public" session="Main" />
     </connection>
     <connection id="e6d9263f-cf7e-4d61-a6e4-a034be2ccd87">
       <console name="Connection 1" type="STANDARD" schema="postgres" session="Main" />

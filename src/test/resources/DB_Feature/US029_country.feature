@@ -1,8 +1,7 @@
-@us29_country
+@us29_country   @db
 Feature: US029
   Background:
     Given user connects to the database
-  @db
   Scenario: user verified number of country table rows
     And user connects to the country table
     Then print the total row country count and verify

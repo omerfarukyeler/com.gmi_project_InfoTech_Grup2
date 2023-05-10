@@ -1,3 +1,4 @@
+@api
 Feature: System should allow to create new countries if not created already
 
   @US025

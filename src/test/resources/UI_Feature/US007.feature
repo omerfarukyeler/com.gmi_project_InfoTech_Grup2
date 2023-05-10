@@ -1,3 +1,4 @@
+@ui
 Feature:System should not allow to make updates with invalid credentials
   Background:
     Given User goes to the GmiBank home page

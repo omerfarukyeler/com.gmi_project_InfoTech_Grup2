@@ -7,7 +7,7 @@ import org.junit.Assert;
 import utilities.ConfigReader;
 
 import java.sql.*;
-
+//select * from tp_state where tpcountry_id=(select id from tp_country where name='USA' and id=1);
 public class US029 {
     String url = "jdbc:postgresql://gmibank.com:5432/gmibank_db"; // Connection Url = jdbc:postgresql://+HOST+":"+PORT+"/DATABASENAME";
     String username = ConfigReader.getProperty("db_username");
@@ -35,7 +35,7 @@ public class US029 {
             count++;
         }
         System.out.println("User Table row count  => " + count);
-        Assert.assertEquals(count, 3227);
+        Assert.assertEquals(count, 3228);
 
     }
 
@@ -76,7 +76,7 @@ public class US029 {
             count++;
         }
         System.out.println("Country Table row size => " + count);
-        Assert.assertEquals(count, 5238);
+        Assert.assertEquals(count, 5254);
     }
 
     @Then("print first country name and verify")
@@ -91,7 +91,7 @@ public class US029 {
     public void printLastCountryNameAndVerify() throws SQLException {
         resultSet.last();
         String lastCountryName = resultSet.getString("name");
-        Assert.assertEquals(lastCountryName, "Tuba");
+        Assert.assertEquals(lastCountryName, "The Netherlands");
         System.out.println("Last country name = " + lastCountryName);
     }
 
