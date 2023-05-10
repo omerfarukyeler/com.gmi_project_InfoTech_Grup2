@@ -1,3 +1,4 @@
+@ui
 Feature: System should not allow anyone to register with invalid credentials
   seeing the message
 

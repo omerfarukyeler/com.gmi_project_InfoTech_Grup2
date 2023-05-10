@@ -1,3 +1,4 @@
+@ui
 Feature: An Employee can manage Customer
 
   Background:

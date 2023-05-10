@@ -1,4 +1,4 @@
-@US019
+@US019 @ui
 Feature: US_019 System should allow Admin to create a new Account
 
   Background:

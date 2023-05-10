@@ -1,9 +1,8 @@
-@us29
+@us29   @db
 Feature: US029
   Background:
     Given user connects to the database
 
-  @db
   Scenario: user verified number of user table rows
     And user connects to the user table
     Then print the total row count and verify

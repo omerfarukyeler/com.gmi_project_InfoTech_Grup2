@@ -1,3 +1,4 @@
+@ui
 Feature: User info segment (user Settings) should be editable on Homepage
   Background:
     Given User goes to the GmiBank home page

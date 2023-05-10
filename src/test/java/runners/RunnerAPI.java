@@ -11,12 +11,11 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber-reports.html",
                 "json:target/cucumber-reports",
                 "rerun:target/failed.txt",
-                "timeline:test-output-thread/",
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                "timeline:test-output-thread/"
         },
-        features = "src/test/resources",
+        features = "src/test/resources/API_Feature",
         glue = {"stepdefinitions"},
-        tags = "@us22", // Keyword Driven Testing
+        tags = "@api", // Keyword Driven Testing
         dryRun = false
 )
 public class RunnerAPI {
