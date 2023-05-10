@@ -59,6 +59,10 @@ public class CreateOrEditACustomerPage {
     @FindBy(id = "tp-customer-mobilePhoneNumber")  public WebElement mobilePhoneNumber;
 
     @FindBy(id = "tp-customer-email")  public WebElement email;
+    @FindBy(xpath="//span[normalize-space()='Save']") public WebElement save;
+
+    @FindBy(xpath="//*[@id=\"root\"]/div/div[2]/div[1]/div/div/div[1]") public WebElement InternalServerError;
+
 
 }
 

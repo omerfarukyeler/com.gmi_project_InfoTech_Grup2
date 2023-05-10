@@ -58,6 +58,10 @@ public class Login_Page {
 
     @FindBy(css=".invalid-feedback") public WebElement errorMessageOnUserSettingsPageForEmail;
 
+    @FindBy(xpath="//a[@id='jh-create-entity']") public WebElement createANewAccount;
+
+    @FindBy(xpath="//a[@id='jh-create-entity']") public WebElement createANewCustomer;
+
 
 
 
@@ -65,6 +69,8 @@ public class Login_Page {
 
     @FindBy(xpath = "//span[text()='Sign out']")
     public WebElement signOut;
+
+
 
 
 
