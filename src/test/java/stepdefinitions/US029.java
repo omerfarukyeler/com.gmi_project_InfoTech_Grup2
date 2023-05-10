@@ -119,6 +119,7 @@ public class US029 {
 
     @Then("prints the total row count and verify")
     public void printsTheTotalRowCountAndVerify() throws SQLException {
+
         int count = 0;
         while (resultSet.next()){
             count++;
