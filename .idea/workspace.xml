@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9984dd01-36a2-4463-ae90-5a07ae3ec23d" name="Changes" comment="ibrahim update 2 - 02/05/2023" />
+    <list default="true" id="9984dd01-36a2-4463-ae90-5a07ae3ec23d" name="Changes" comment="update 10.05.2023">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pojos/ResponseCustomers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/RunnerAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/RunnerAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US001.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US020.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US020.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/API_Feature/US020.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/API_Feature/US020.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output-thread/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output-thread/report.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="muhammet" />
+        <entry key="$PROJECT_DIR$" value="omer" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,16 +70,15 @@
       <recent name="C:\Users\ihsan_elif\git\com.gmi_project_InfoTech_Grup2\src\test\resources\API_Feature" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Runner">
-    <configuration name="Scenario: User can just create each country 1 by 1" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: US029_employee">
+    <configuration name="Feature: US002" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/API_Feature/US025.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/UI_Feature/US002.feature" />
       <option name="GLUE" value="stepdefinitions utilities" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="com.medunna_project_InfoTech_Grup2" />
-      <option name="NAME_FILTER" value="^User can just create each country 1 by 1$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User can just create each country 1 by 1$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User can just create each country 1 by 1" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: US002" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -83,15 +90,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User can just delete each country 1 by 1" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: US003" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/API_Feature/US027.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/UI_Feature/US003.feature" />
       <option name="GLUE" value="stepdefinitions utilities" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="com.medunna_project_InfoTech_Grup2" />
-      <option name="NAME_FILTER" value="^User can just delete each country 1 by 1$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User can just delete each country 1 by 1$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User can just delete each country 1 by 1" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: US003" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -103,15 +109,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User can read all countries and validate them one by one" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: US020" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/API_Feature/US021.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/API_Feature/US020.feature" />
       <option name="GLUE" value="stepdefinitions utilities" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="com.medunna_project_InfoTech_Grup2" />
-      <option name="NAME_FILTER" value="^User can read all countries and validate them one by one$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User can read all countries and validate them one by one$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User can read all countries and validate them one by one" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: US020" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -123,32 +128,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.gmi_project_InfoTech_Grup2" />
+    <configuration name="Feature: US024" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/API_Feature/US024.feature" />
+      <option name="GLUE" value="stepdefinitions utilities" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="com.medunna_project_InfoTech_Grup2" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: US024" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="runners.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="runners" />
-      <option name="MAIN_CLASS_NAME" value="runners.Runner" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RunnerAPI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: US029_employee" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/DB_Feature/US029_employee.feature" />
+      <option name="GLUE" value="stepdefinitions utilities" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="com.medunna_project_InfoTech_Grup2" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: US029_employee" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="runners.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="runners" />
-      <option name="MAIN_CLASS_NAME" value="runners.RunnerAPI" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -165,19 +178,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber Java.Scenario: User can just create each country 1 by 1" />
-      <item itemvalue="Cucumber Java.Scenario: User can read all countries and validate them one by one" />
-      <item itemvalue="Cucumber Java.Scenario: User can just delete each country 1 by 1" />
-      <item itemvalue="JUnit.Runner" />
-      <item itemvalue="JUnit.RunnerAPI" />
+      <item itemvalue="Cucumber Java.Feature: US002" />
+      <item itemvalue="Cucumber Java.Feature: US003" />
+      <item itemvalue="Cucumber Java.Feature: US020" />
+      <item itemvalue="Cucumber Java.Feature: US024" />
+      <item itemvalue="Cucumber Java.Feature: US029_employee" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Runner" />
-        <item itemvalue="JUnit.RunnerAPI" />
-        <item itemvalue="Cucumber Java.Scenario: User can just delete each country 1 by 1" />
-        <item itemvalue="Cucumber Java.Scenario: User can just create each country 1 by 1" />
-        <item itemvalue="Cucumber Java.Scenario: User can read all countries and validate them one by one" />
+        <item itemvalue="Cucumber Java.Feature: US029_employee" />
+        <item itemvalue="Cucumber Java.Feature: US024" />
+        <item itemvalue="Cucumber Java.Feature: US020" />
+        <item itemvalue="Cucumber Java.Feature: US003" />
+        <item itemvalue="Cucumber Java.Feature: US002" />
       </list>
     </recent_temporary>
   </component>

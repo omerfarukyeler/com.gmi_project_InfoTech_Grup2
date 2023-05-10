@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"8b464816-02ca-4430-93f9-6dc93901b55a","feature":"System should not allow to create a new customer","scenario":"user can not type invalid email","start":1683745684341,"group":1,"content":"","tags":"@us009n,","end":1683745844022,"className":"failed"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"ab453e7c-75ef-47bf-acd4-239365760d52","feature":"System should allow to read all countries","scenario":"Read all customers you created and validate them from your data set","start":1683755147173,"group":1,"content":"","tags":"@us020,","end":1683755152303,"className":"passed"}]);
 CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
 });
