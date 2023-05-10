@@ -32,46 +32,46 @@ public class US001 {
 
     @And("Enters the appropriate SSN number")
     public void entersTheAppropriateSSNNumber() {
-        us001.ssnLogin.sendKeys("768-99-5641");
+        us001.ssnLogin.sendKeys("767-89-4641");
     }
     @And("Enters the appropriate name")
     public void entersTheAppropriateName() {
 
-        us001.name.sendKeys("asln2693");
+        us001.name.sendKeys("aslnim2693");
     }
     @And("Enters the appropriate lastname")
     public void entersTheAppropriateLastname() {
-        us001.lastName.sendKeys("ouderoey26");
+        us001.lastName.sendKeys("onrrdesroey26");
 
     }
 
     @And("Enters the appropriate adress")
     public void entersTheAppropriateAdress() {
 
-        us001.adress.sendKeys("austrae 064 564075 Heilbronn");
+        us001.adress.sendKeys("Ausgabe 064 564075 Heilbronn");
     }
     @And("Enters the appropriate Phone Number")
     public void entersTheAppropriatePhoneNumber() {
-        us001.phoneNumber.sendKeys("6334560239");
+        us001.phoneNumber.sendKeys("6334561338");
     }
     @And("Enters the user name")
     public void entersTheUserName() {
-        us001.username.sendKeys("fedeileruu");
+        us001.username.sendKeys("fedeileryy");
     }
     @And("Enters the appropriate emailAdress")
     public void entersTheAppropriateEmailAdress() {
-        us001.email.sendKeys("haayaller66@hotmail.com");
+        us001.email.sendKeys("haayall26@hotmail.com");
     }
 
     @And("Enters the appropriate new password")
     public void entersTheAppropriateNewPassword() {
-        us001.password.sendKeys("Deter232??");
+        us001.password.sendKeys("Deter162??");
     }
 
     @And("Enters the appropriate renew pasword")
     public void entersTheAppropriateRenewPasword() throws InterruptedException {
 
-        us001.repassword.sendKeys("Deter232??");
+        us001.repassword.sendKeys("Deter162??");
 
     }
     @And("Click the register button")
