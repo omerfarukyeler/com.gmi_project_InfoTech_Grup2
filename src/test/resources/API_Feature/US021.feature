@@ -1,3 +1,4 @@
+@api
 Feature: System should allow to read all countries
 
   @US021

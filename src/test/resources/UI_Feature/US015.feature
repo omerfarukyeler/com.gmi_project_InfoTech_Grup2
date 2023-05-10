@@ -1,4 +1,4 @@
-@US015
+@US015 @ui
 Feature: US_015 System should allow user to manage their account
 
   Background:

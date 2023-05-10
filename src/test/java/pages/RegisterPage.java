@@ -110,7 +110,11 @@ public class RegisterPage {
     public  WebElement strengthbar;
 
 
+    @FindBy(xpath="//a[@class='d-flex align-items-center dropdown-toggle nav-link']//*[name()='svg']")
+    public WebElement userButtonn;
 
+    @FindBy(xpath = "//span[normalize-space()='Sign in']")
+    public WebElement signIn;
 
 
 

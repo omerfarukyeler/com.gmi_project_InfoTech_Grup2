@@ -1,4 +1,4 @@
-@US011
+@US011 @ui
 Feature: US_011 Date should be created on the time of account creation
 
   Background:

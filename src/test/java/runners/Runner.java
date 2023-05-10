@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/UI_Feature",
         glue = {"stepdefinitions","utilities/hooks"},
-        tags = "@us17", // Keyword Driven Testing
+        tags = "@ui", // Keyword Driven Testing
         dryRun = false
 )
 public class Runner {

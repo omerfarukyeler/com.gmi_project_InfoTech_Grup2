@@ -1,3 +1,4 @@
+@ui
 Feature: Address of customer can be created
 
   Background:

@@ -1,4 +1,4 @@
-@us17
+@us17 @ui
 Feature: System should allow the Admin to manage users
 
   Background:

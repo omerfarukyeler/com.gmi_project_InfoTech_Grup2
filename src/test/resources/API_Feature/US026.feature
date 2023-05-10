@@ -1,4 +1,4 @@
-@us26
+@us26 @api
 Feature: System should allow to update countries
 
   Scenario: TC01_User can just update each country 1 by 1

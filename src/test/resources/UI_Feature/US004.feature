@@ -1,3 +1,4 @@
+@ui
 Feature: Login page should accessible with valid credentials
 
   Background:
