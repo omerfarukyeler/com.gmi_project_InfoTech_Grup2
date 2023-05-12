@@ -17,6 +17,20 @@ Feature: US_013 An Employee can create a new Account
     Then You should see the error message under the textbox This field is required.
     And Click on Sign Out
 
+  Scenario: TC02_ User should create a description for the new account and it cannot be blank
+    And Click on Description text box
+    And Enter a valid value in the definition test box
+    And Click on Balance text box
+    Then  You should not see the error message under the textbox This field is required.
+    And Click on Sign Out
+
+
+  Scenario: TC03_User should provide a balance for the first time account creation as Dollar
+    When Click on Balance text box
+    And Enter a a number in the balance test box
+    And Click on Account Type dropdown
+    Then I should not see the error message under the textbox This field should be a number.
+    And Click on Sign Out
 
   Scenario: TC04_User should provide a balance for the first time account creation as Dollar
     And  Click on Balance text box
@@ -54,17 +68,3 @@ Feature: US_013 An Employee can create a new Account
     Then You should select an employee from the drop-down
     And Click on Sign Out
 
-  Scenario: TC02_ User should create a description for the new account and it cannot be blank
-    And Click on Description text box
-    And Enter a valid value in the definition test box
-    And Click on Balance text box
-    Then  You should not see the error message under the textbox This field is required.
-    And Click on Sign Out
-
-
-  Scenario: TC03_User should provide a balance for the first time account creation as Dollar
-    When Click on Balance text box
-    And Enter a a number in the balance test box
-    And Click on Account Type dropdown
-    Then I should not see the error message under the textbox This field should be a number.
-    And Click on Sign Out

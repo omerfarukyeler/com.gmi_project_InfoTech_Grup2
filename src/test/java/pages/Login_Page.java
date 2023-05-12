@@ -8,7 +8,9 @@ import utilities.Driver;
 import java.util.List;
 
 public class Login_Page {
-    public Login_Page() {PageFactory.initElements(Driver.getDriver(), this);}
+    public Login_Page() {
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
 
     @FindBy(css="li[id='account-menu'] a[class='dropdown-toggle nav-link']") public WebElement signInRegister;
 

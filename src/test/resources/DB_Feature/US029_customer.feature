@@ -1,6 +1,5 @@
 @US029_customer
 Feature: US029
-
   Background:
     Given user connects to the database
 

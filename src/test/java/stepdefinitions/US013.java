@@ -8,6 +8,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.asserts.SoftAssert;
 import pages.CreateAccountPage;
 import pages.Login_Page;
 import pages.Manage_Accounts_Page;
@@ -94,7 +95,6 @@ public class US013 {
             options.add(option.getText());
         }
         Assert.assertTrue(options.contains("CHECKING"));
-
 
     }
     @When("I should select the an account type SAVING")

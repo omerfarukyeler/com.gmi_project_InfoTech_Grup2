@@ -7,7 +7,6 @@ import org.junit.Assert;
 import utilities.ConfigReader;
 
 import java.sql.*;
-//select * from tp_state where tpcountry_id=(select id from tp_country where name='USA' and id=1);
 public class US029 {
     String url = "jdbc:postgresql://gmibank.com:5432/gmibank_db"; // Connection Url = jdbc:postgresql://+HOST+":"+PORT+"/DATABASENAME";
     String username = ConfigReader.getProperty("db_username");
