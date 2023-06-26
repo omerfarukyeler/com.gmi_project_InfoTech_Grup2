@@ -5,7 +5,7 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.Login_Page;
-import utilities.CommenSteps;
+import utilities.ReUsableMethods;
 
 public class US005 {
     Login_Page loginPage = new Login_Page();
@@ -17,7 +17,7 @@ public class US005 {
 
     @Then("User verifies error message")
     public void userVerifiesErrorMessage() {
-        CommenSteps.waitForVisibility(loginPage.errorMessage,10);
+        ReUsableMethods.waitForVisibility(loginPage.errorMessage,10);
         String errorMessage = loginPage.errorMessage.getText();
         System.out.println("errorMessage = " + errorMessage);
         Assert.assertTrue(errorMessage.contains("Failed to sign in!"));

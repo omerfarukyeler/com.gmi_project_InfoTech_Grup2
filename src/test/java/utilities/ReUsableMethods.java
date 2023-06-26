@@ -22,7 +22,7 @@ import java.util.Set;
 
 import static utilities.Authentication.generateToken;
 
-public class CommenSteps {
+public class ReUsableMethods {
     /**
      * This method clears the textbox and sends another text
      *

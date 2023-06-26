@@ -6,6 +6,7 @@ Feature: System should allow any user to register with valid credentials
     Given User goes to home pages
 
   @US001_1
+  @smoke
     Scenario: Check the succesfully message
 
     When User clicks the user button
@@ -24,6 +25,7 @@ Feature: System should allow any user to register with valid credentials
 
   @USOO1_2
     @Negative
+    @smoke
 
   Scenario: Check the failed message
     When User clicks the user button

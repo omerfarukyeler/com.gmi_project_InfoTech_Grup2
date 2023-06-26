@@ -6,7 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import pages.RegisterPage;
-import utilities.CommenSteps;
+import utilities.ReUsableMethods;
 import utilities.ConfigReader;
 import utilities.Driver;
 
@@ -21,7 +21,7 @@ public class US001 {
 
     @When("User clicks the user button")
     public void userClicksTheUserButton() {
-        CommenSteps.waitForClickablility(us001.userButton,10);
+        ReUsableMethods.waitForClickablility(us001.userButton,10);
         us001.userButton.click();
     }
     @And("User clicks on register tab")

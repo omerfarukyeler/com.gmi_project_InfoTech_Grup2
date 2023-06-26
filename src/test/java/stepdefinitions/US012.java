@@ -5,7 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import pages.*;
-import utilities.CommenSteps;
+import utilities.ReUsableMethods;
 import utilities.ConfigReader;
 
 public class US012 {
@@ -17,7 +17,7 @@ public class US012 {
 
     @When("Employee clicks dropdown account menu")
     public void employeeClicksDropdownAccountMenu() {
-        CommenSteps.waitForClickablility(gmiBankHomePage.accountMenu,5);
+        ReUsableMethods.waitForClickablility(gmiBankHomePage.accountMenu,5);
         gmiBankHomePage.accountMenu.click();
     }
 
@@ -28,7 +28,7 @@ public class US012 {
 
     @And("Employee types the valid username in the relevant field")
     public void employeeTypesTheValidUsernameInTheRelevantField() {
-        CommenSteps.waitForClickablility(signInPage.userNameTextBox,5);
+        ReUsableMethods.waitForClickablility(signInPage.userNameTextBox,5);
         signInPage.userNameTextBox.sendKeys(ConfigReader.getProperty("employeeLoginName"));
     }
 
@@ -39,19 +39,19 @@ public class US012 {
 
     @And("Employee clicks on Sign in button")
     public void employeeClicksOnSignInButton() {
-        CommenSteps.waitForVisibility(signInPage.userNameTextBox,5);
+        ReUsableMethods.waitForVisibility(signInPage.userNameTextBox,5);
         signInPage.signInButton.click();
     }
 
     @And("Employee clicks on My Operations menu")
     public void employeeClicksOnMyOperationsMenu() {
-        CommenSteps.waitForVisibility(loginPage.myOperations,5);
+        ReUsableMethods.waitForVisibility(loginPage.myOperations,5);
         loginPage.myOperations.click();
     }
 
     @And("Employee clicks on Manage Customers")
     public void employeeClicksOnManageCustomers() {
-        CommenSteps.waitForVisibility(loginPage.manageCustomers,5);
+        ReUsableMethods.waitForVisibility(loginPage.manageCustomers,5);
         loginPage.manageCustomers.click();
     }
 
@@ -84,14 +84,14 @@ public class US012 {
 
     @Then("Employee validates that the edit customers button is available with the data on the next page")
     public void employeeValidatesThatTheEditCustomersButtonIsAvailableWithTheDataOnTheNextPage() {
-        CommenSteps.verifyElementDisplayed(createOrEditACustomerPage.customerIdTextBox);
+        ReUsableMethods.verifyElementDisplayed(createOrEditACustomerPage.customerIdTextBox);
     }
 
     @Then("Employee validates view edit button all for all customers")
     public void employeeValidatesViewEditButtonAllForAllCustomers() {
-        CommenSteps.verifyElementDisplayed(manageCustomersPage.customersFirstLineEditButton);
-        CommenSteps.verifyElementDisplayed(manageCustomersPage.customersTenthLineEditButton);
-        CommenSteps.verifyElementDisplayed(manageCustomersPage.customersTwentiethLineEditButton);
+        ReUsableMethods.verifyElementDisplayed(manageCustomersPage.customersFirstLineEditButton);
+        ReUsableMethods.verifyElementDisplayed(manageCustomersPage.customersTenthLineEditButton);
+        ReUsableMethods.verifyElementDisplayed(manageCustomersPage.customersTwentiethLineEditButton);
     }
 
     @And("Employee clicks any customer delete button in the customer table")
@@ -101,7 +101,7 @@ public class US012 {
 
     @Then("Employee sees a question message about wanting to delete")
     public void employeeSeesAQuestionMessageAboutWantingToDelete() {
-        CommenSteps.waitForVisibility(manageCustomersPage.deleteQuestionDialog,5);
+        ReUsableMethods.waitForVisibility(manageCustomersPage.deleteQuestionDialog,5);
         Assert.assertTrue(manageCustomersPage.deleteQuestionDialog.getText().contains("Are you sure you want to delete Customer"));
     }
 }

@@ -6,7 +6,7 @@ import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import pages.Login_Page;
-import utilities.CommenSteps;
+import utilities.ReUsableMethods;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +28,7 @@ public class US006 {
     public void userVerifiesThatTheFirstNameLastNameEMailAndLanguageFieldsAreEditable() {
         Boolean fieldsIsEditable;
         try{
-            CommenSteps.doubleClick(loginPage.firstNameOnUserSettingsPage);
+            ReUsableMethods.doubleClick(loginPage.firstNameOnUserSettingsPage);
             loginPage.firstNameOnUserSettingsPage.sendKeys("First123"+ Keys.TAB);
             System.out.println("first name is typed");
             loginPage.lastNameOnUserSettingsPage.sendKeys("Last123"+ Keys.TAB);

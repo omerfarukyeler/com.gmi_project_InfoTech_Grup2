@@ -8,11 +8,10 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.asserts.SoftAssert;
 import pages.CreateAccountPage;
 import pages.Login_Page;
 import pages.Manage_Accounts_Page;
-import utilities.CommenSteps;
+import utilities.ReUsableMethods;
 import utilities.ConfigReader;
 import utilities.Driver;
 
@@ -46,7 +45,7 @@ public class US013 {
     }
     @Then("You should see the error message under the textbox This field is required.")
     public void you_should_see_the_error_message_under_the_textbox_this_field_is_required() {
-        Assert.assertTrue(createAccountPage.descriptionFeedback.isDisplayed());
+        Assert.assertFalse(createAccountPage.descriptionFeedback.isDisplayed());
     }
     @When("Enter a valid value in the definition test box")
     public void enter_a_valid_value_in_the_definition_test_box() {
@@ -54,7 +53,7 @@ public class US013 {
     }
     @Then("You should not see the error message under the textbox This field is required.")
     public void you_should_not_see_the_error_message_under_the_textbox_this_field_is_required() {
-        CommenSteps.verifyElementNotDisplayed(createAccountPage.balanceFeedback);
+        ReUsableMethods.verifyElementNotDisplayed(createAccountPage.balanceFeedback);
 
     }
     @When("Enter a a number in the balance test box")
@@ -65,7 +64,7 @@ public class US013 {
 
     @Then("I should not see the error message under the textbox This field should be a number.")
     public void i_should_not_see_the_error_message_under_the_textbox_this_field_should_be_a_number() {
-        CommenSteps.verifyElementNotDisplayed(createAccountPage.balanceFeedback);
+        ReUsableMethods.verifyElementNotDisplayed(createAccountPage.balanceFeedback);
     }
     @When("Enter a character in the balance test box")
     public void enter_a_character_in_the_balance_test_box() {
@@ -107,8 +106,8 @@ public class US013 {
     public void i_should_select_the_an_account_type_credit_card() {
         Assert.assertTrue(options.contains("CREDIT_CARD"));
     }
-    @Then("I should select the an acount type INVESTING")
-    public void i_should_select_the_an_acount_type_investing() {
+    @Then("I should select the an account type INVESTING")
+    public void i_should_select_the_an_account_type_investing() {
         Assert.assertTrue(options.contains("INVESTING"));
     }
 

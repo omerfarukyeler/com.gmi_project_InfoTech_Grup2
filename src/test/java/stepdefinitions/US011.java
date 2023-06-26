@@ -9,7 +9,7 @@ import org.testng.asserts.SoftAssert;
 import pages.CreateOrEditACustomerPage;
 import pages.Login_Page;
 import pages.ManageCustomersPage;
-import utilities.CommenSteps;
+import utilities.ReUsableMethods;
 import utilities.ConfigReader;
 
 public class US011 {
@@ -60,13 +60,13 @@ public class US011 {
     @Then("You should see the error message")
     public void you_should_see_the_error_message() {
         softAssert.assertTrue(createACustomerPage.alert.getText().contains("translation-not-found[gmiBankBackendApp.tPAccountRegistration.updated]"));
-        CommenSteps.waitForVisibility(createACustomerPage.alert,5);
-        CommenSteps.verifyElementDisplayed(createACustomerPage.alert);
+        ReUsableMethods.waitForVisibility(createACustomerPage.alert,5);
+        ReUsableMethods.verifyElementDisplayed(createACustomerPage.alert);
     }
 
     @Then("You should not see the error message")
     public void you_should_not_see_the_error_message() {
-        CommenSteps.verifyElementNotDisplayed(createACustomerPage.alert);
+        ReUsableMethods.verifyElementNotDisplayed(createACustomerPage.alert);
     }
 
     @Then("The date should be created as month, day, year, hour and minute")
@@ -81,8 +81,8 @@ public class US011 {
     @Then("You can choose a user from the registration")
     public void you_can_choose_a_user_from_the_registration() {
         Select select = new Select(createACustomerPage.user);
-        CommenSteps.selectDropdown(createACustomerPage.user,3);
-        CommenSteps.verifyElementDisplayed(createACustomerPage.user);
+        ReUsableMethods.selectDropdown(createACustomerPage.user,3);
+        ReUsableMethods.verifyElementDisplayed(createACustomerPage.user);
 
     }
 
@@ -94,12 +94,12 @@ public class US011 {
 
     @Then("you can choose an account created on manage accounts")
     public void you_can_choose_an_account_created_on_manage_accounts() {
-        CommenSteps.verifyElementDisplayed(createACustomerPage.account);
+        ReUsableMethods.verifyElementDisplayed(createACustomerPage.account);
     }
 
     @When("User can select Zelle Enrolled optionally")
     public void user_can_select_zelle_enrolled_optionally() {
-        CommenSteps.verifyElementDisplayed(createACustomerPage.zelleEnrolled);
+        ReUsableMethods.verifyElementDisplayed(createACustomerPage.zelleEnrolled);
 
     }
 

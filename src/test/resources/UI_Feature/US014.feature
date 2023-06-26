@@ -17,7 +17,7 @@ Feature: US_014 Date should be created on the time of account creation
     And Click on Save Button
     Then You should see the error message
     And Click on Sign Out
-
+  @smoke
   Scenario:TC02_The date can be type at the time of creation an account
     When Provide the invalid date in the past at the time of creation an account
     And Fill in the other fields

@@ -7,9 +7,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
-import pojos.Countries;
 import pojos.GetRegistrations;
-import utilities.CommenSteps;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;

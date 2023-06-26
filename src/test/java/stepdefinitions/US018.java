@@ -4,7 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import pages.*;
-import utilities.CommenSteps;
+import utilities.ReUsableMethods;
 
 public class US018 {
     GmiBankHomePage gmiBankHomePage = new GmiBankHomePage();
@@ -36,9 +36,9 @@ public class US018 {
 
     @Then("Manager validates view edit button all for all customers")
     public void managerValidatesViewEditButtonAllForAllCustomers() {
-        CommenSteps.verifyElementDisplayed(manageCustomersPage.customersFirstLineEditButton);
-        CommenSteps.verifyElementDisplayed(manageCustomersPage.customersTenthLineEditButton);
-        CommenSteps.verifyElementDisplayed(manageCustomersPage.customersTwentiethLineEditButton);
+        ReUsableMethods.verifyElementDisplayed(manageCustomersPage.customersFirstLineEditButton);
+        ReUsableMethods.verifyElementDisplayed(manageCustomersPage.customersTenthLineEditButton);
+        ReUsableMethods.verifyElementDisplayed(manageCustomersPage.customersTwentiethLineEditButton);
     }
 
     @And("Manager clicks any customer edit button in the customer table")
@@ -48,7 +48,7 @@ public class US018 {
 
     @Then("Manager validates that the edit customers button is available with the data on the next page")
     public void managerValidatesThatTheEditCustomersButtonIsAvailableWithTheDataOnTheNextPage() {
-        CommenSteps.verifyElementDisplayed(createOrEditACustomerPage.customerIdTextBox);
+        ReUsableMethods.verifyElementDisplayed(createOrEditACustomerPage.customerIdTextBox);
     }
 
     @And("Manager clicks any customer delete button in the customer table")
@@ -58,7 +58,7 @@ public class US018 {
 
     @Then("Manager sees a question message about wanting to delete")
     public void managerSeesAQuestionMessageAboutWantingToDelete() {
-        CommenSteps.waitForVisibility(manageCustomersPage.deleteQuestionDialog,5);
+        ReUsableMethods.waitForVisibility(manageCustomersPage.deleteQuestionDialog,5);
         Assert.assertTrue(manageCustomersPage.deleteQuestionDialog.getText().contains("Are you sure you want to delete Customer"));
     }
 }

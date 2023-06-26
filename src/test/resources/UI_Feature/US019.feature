@@ -10,13 +10,26 @@ Feature: US_019 System should allow Admin to create a new Account
     And Click on My Operations
     And Click on Manage Account
     And Click on Create a New Account
-
+  @smoke
   Scenario: TC01_ User should create a description for the new account and it cannot be blank
     And Click on Description text box
     And Click on Balance text box
     Then You should see the error message under the textbox This field is required.
     And Click on Sign Out
 
+  Scenario: TC02_ User should create a description for the new account and it cannot be blank
+    And Click on Description text box
+    And Enter a valid value in the definition test box
+    And Click on Balance text box
+    Then  You should not see the error message under the textbox This field is required.
+    And Click on Sign Out
+
+  Scenario: TC03_User should provide a balance for the first time account creation as Dollar
+    When Click on Balance text box
+    And Enter a a number in the balance test box
+    And Click on Account Type dropdown
+    Then I should not see the error message under the textbox This field should be a number.
+    And Click on Sign Out
 
   Scenario: TC04_User should provide a balance for the first time account creation as Dollar
     And  Click on Balance text box
@@ -37,7 +50,7 @@ Feature: US_019 System should allow Admin to create a new Account
     And I should select the an account type CHECKING
     And I should select the an account type SAVING
     And I should select the an account type CREDIT_CARD
-    Then I should select the an acount type INVESTING
+    Then I should select the an account type INVESTING
     And Click on Sign Out
 
 
@@ -48,23 +61,8 @@ Feature: US_019 System should allow Admin to create a new Account
     Then I should select the an account status CLOSED
     And Click on Sign Out
 
-
   Scenario: TC08_User can select an employee from the drop-down
     And Click on Employee dropdown
     Then You should select an employee from the drop-down
     And Click on Sign Out
 
-  Scenario: TC02_ User should create a description for the new account and it cannot be blank
-    And Click on Description text box
-    And Enter a valid value in the definition test box
-    And Click on Balance text box
-    Then  You should not see the error message under the textbox This field is required.
-    And Click on Sign Out
-
-
-  Scenario: TC03_User should provide a balance for the first time account creation as Dollar
-    When Click on Balance text box
-    And Enter a a number in the balance test box
-    And Click on Account Type dropdown
-    Then I should not see the error message under the textbox This field should be a number.
-    And Click on Sign Out

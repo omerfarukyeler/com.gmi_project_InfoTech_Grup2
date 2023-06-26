@@ -9,7 +9,7 @@ import pages.GmiBankHomePage;
 import pages.LoginPasswordPage;
 import pages.Login_Page;
 import pages.SignInPage;
-import utilities.CommenSteps;
+import utilities.ReUsableMethods;
 import utilities.ConfigReader;
 import utilities.Driver;
 
@@ -35,7 +35,7 @@ public class US008 {
 
     @And("User types the valid username in the relevant field")
     public void userTypesTheValidUsernameInTheRelevantField() {
-        CommenSteps.waitForClickablility(signInPage.userNameTextBox,5);
+        ReUsableMethods.waitForClickablility(signInPage.userNameTextBox,5);
         signInPage.userNameTextBox.sendKeys(ConfigReader.getProperty("ibrahimsTestUserName"));
     }
 
@@ -51,7 +51,7 @@ public class US008 {
 
     @And("User clicks on Password")
     public void userClicksOnPassword() {
-        CommenSteps.waitForClickablility(loginPage.password,5);
+        ReUsableMethods.waitForClickablility(loginPage.password,5);
         loginPage.password.click();
     }
 

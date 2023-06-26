@@ -5,7 +5,7 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.RegisterPage;
-import utilities.CommenSteps;
+import utilities.ReUsableMethods;
 import utilities.Driver;
 
 public class US003 {
@@ -14,7 +14,7 @@ public class US003 {
     @And("User puts a lowercase char in new password")
     public void userPutsALowercaseCharInNewPassword() throws InterruptedException {
 
-        CommenSteps.waitForClickablility(us001.password,5);
+        ReUsableMethods.waitForClickablility(us001.password,5);
         us001.password.sendKeys("INTEGRAL26?k", Keys.TAB);
         Driver.wait(4);
     }

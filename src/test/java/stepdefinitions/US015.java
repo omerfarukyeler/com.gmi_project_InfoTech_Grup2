@@ -97,5 +97,6 @@ Manage_Accounts_Page manageAccountsPage= new Manage_Accounts_Page();
         loginPage.signInRegister.click();
         loginPage.signOutButton.click();
         Driver.closeDriver();
+
     }
 }

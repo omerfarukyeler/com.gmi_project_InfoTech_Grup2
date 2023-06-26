@@ -11,7 +11,7 @@ Feature: US_011 Date should be created on the time of account creation
     And Click on Manage Customer
     And Click on Create a New Customer
 
-
+  @smoke
   Scenario: TC01_The date cannot be typed earlier, in the past, at the time of creation an account
     When Provide the invalid date in the past at the time of creation an account
     And Fill in the other fields

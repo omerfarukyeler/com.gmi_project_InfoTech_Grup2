@@ -7,7 +7,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.*;
-import utilities.CommenSteps;
+import utilities.ReUsableMethods;
 import utilities.ConfigReader;
 import utilities.Driver;
 
@@ -25,7 +25,7 @@ public class US010 {
 
     @When("Manager clicks dropdown account menu")
     public void managerClicksDropdownAccountMenu() {
-        CommenSteps.waitForClickablility(gmiBankHomePage.accountMenu,5);
+        ReUsableMethods.waitForClickablility(gmiBankHomePage.accountMenu,5);
         gmiBankHomePage.accountMenu.click();
     }
 
@@ -36,7 +36,7 @@ public class US010 {
 
     @And("Manager types the valid username in the relevant field")
     public void managerTypesTheValidUsernameInTheRelevantField() {
-        CommenSteps.waitForClickablility(signInPage.userNameTextBox,5);
+        ReUsableMethods.waitForClickablility(signInPage.userNameTextBox,5);
         signInPage.userNameTextBox.sendKeys(ConfigReader.getProperty("managerLoginName"));
     }
 
@@ -47,19 +47,19 @@ public class US010 {
 
     @And("Manager clicks on Sign in button")
     public void managerClicksOnSignInButton() {
-        CommenSteps.waitForVisibility(signInPage.userNameTextBox,5);
+        ReUsableMethods.waitForVisibility(signInPage.userNameTextBox,5);
         signInPage.signInButton.click();
     }
 
     @And("Manager clicks on My Operations menu")
     public void managerClicksOnMyOperationsMenu() {
-        CommenSteps.waitForVisibility(loginPage.myOperations,5);
+        ReUsableMethods.waitForVisibility(loginPage.myOperations,5);
         loginPage.myOperations.click();
     }
 
     @And("Manager clicks on Manage Customers")
     public void managerClicksOnManageCustomers() {
-        CommenSteps.waitForVisibility(loginPage.manageCustomers,5);
+        ReUsableMethods.waitForVisibility(loginPage.manageCustomers,5);
         loginPage.manageCustomers.click();
     }
 
@@ -169,13 +169,13 @@ public class US010 {
             forAddressBoxErrorMessage=false;
         }
         Assert.assertTrue(forAddressBoxErrorMessage);
-        CommenSteps.waitForVisibility(createOrEditACustomerPage.userAccountDownMenu,5);
+        ReUsableMethods.waitForVisibility(createOrEditACustomerPage.userAccountDownMenu,5);
 
     }
 
     @And("Manager clicks on sign out button")
     public void managerClicksOnSignOutButton() {
-        CommenSteps.waitForClickablility(createOrEditACustomerPage.signOutButton,5);
+        ReUsableMethods.waitForClickablility(createOrEditACustomerPage.signOutButton,5);
         createOrEditACustomerPage.signOutButton.click();
     }
 
