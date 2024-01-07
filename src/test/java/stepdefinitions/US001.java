@@ -56,7 +56,7 @@ public class US001 {
     }
     @And("Enters the user name")
     public void entersTheUserName() {
-        us001.username.sendKeys("fedeıuıuileryy");
+        us001.username.sendKeys("aslanyeler");
     }
     @And("Enters the appropriate emailAdress")
     public void entersTheAppropriateEmailAdress() {
