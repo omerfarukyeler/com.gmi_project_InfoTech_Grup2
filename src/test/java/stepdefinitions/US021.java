@@ -1,19 +1,12 @@
 package stepdefinitions;
 
-import com.google.gson.Gson;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.junit.Test;
 import pojos.Countries;
 import utilities.CommenSteps;
 
-import java.util.Map;
-
-import static org.junit.Assert.*;
-import static utilities.Authentication.generateToken;
+import static org.junit.Assert.assertEquals;
 
 public class US021 {
     Response response;

@@ -1,6 +1,5 @@
 package stepdefinitions;
 
-import baseurl.GmiBaseUrl;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.builder.RequestSpecBuilder;

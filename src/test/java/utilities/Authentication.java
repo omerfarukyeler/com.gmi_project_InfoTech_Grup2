@@ -2,7 +2,6 @@ package utilities;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
